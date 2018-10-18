@@ -1,6 +1,6 @@
 # Current Portfolio Site
 
-**This is using a starter for Gatsby.js V2.**
+**This site is using Gatsby.js V2, Node.js, and React**
 
 ## Preview
 
