@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
   render() {
@@ -13,26 +12,33 @@ class Main extends React.Component {
     return (
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
+        {/* // NO Need for this at the moment.
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
           <span className="image main"><img src={pic01} alt="" /></span>
           <p>Coming Soon</p>
           <p></p>
           {close}
-        </article>
+        </article> */}
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Coming Soon</p>
-          <p></p>
+          {/* <span className="image main"><img src={pic01} alt="" /></span> */}
+          <p>This page is currently under development. It should be ready in the next few days. For more info, check out the source code of this website by clicking <a href="https://github.com/DJPoland/Portfolio-Site">here</a>.</p>
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Coming Soon</p>
+          <span className="image main"><img src={pic02} alt="" /></span>
+          <p>    At the age of 12, I became fascinated with video games and how they were developed. 
+            This interest led to hacking and modifying code within games to eventually building them in the Java programming language. 
+            Soon afterwards I maintained servers with 50 to 100 concurrent players for years in middle and high school, 
+            which instilled my passion for game and software development.</p><p>
+
+            As my college experience progresses, I have found a deep interest in Node.js, React.js, and Amazon Web Services, yet 
+            I'm still comfortable with C/C++, Java, Python, Javascript and C#. Additionally I have programmed in well-known game engines like Unreal and Unity, 
+            which has inspired me to construct simple games in virtual and augmented reality. Now I hope to develop video games of any form or develop software that's utilized by many users.</p>
           {close}
         </article>
 

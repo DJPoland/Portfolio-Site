@@ -14,8 +14,8 @@
 
 		&:before {
 			@include vendor('pointer-events', 'none');
-			background-image: url('../../images/overlay.png');
-			background-color: _palette(bg-overlay);
+			// background-image: url('../../images/overlay.png');
+			// background-color: _palette(bg-overlay);
 			border-radius: _size(border-radius);
 			content: '';
 			display: block;
@@ -28,8 +28,8 @@
 		}
 
 		img {
-			border-radius: _size(border-radius);
-			display: block;
+			// border-radius: _size(border-radius);
+			// display: block;
 		}
 
 		&.left,
@@ -69,7 +69,11 @@
 			width: 100%;
 
 			img {
-				width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				height: 200px;
+				width: 200px;
 			}
 		}
 
