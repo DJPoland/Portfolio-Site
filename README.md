@@ -1,6 +1,6 @@
 # Current Portfolio Site
 
-This site is using Gatsby, Node, and React. Icons by [Font Awesome](https://fontawesome.com).
+This site is using Gatsby, Node, React, and React Bootstrap. Icons by [Font Awesome](https://fontawesome.com). Thanks [HTML5UP](https://html5up.net/) for the creative starter template.
 
 ## Preview
 
