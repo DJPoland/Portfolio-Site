@@ -1,6 +1,6 @@
 # Current Portfolio Site
 
-**This site is using Gatsby.js V2, Node.js, and React.**
+This site is using Gatsby, Node, and React. Icons by [Font Awesome](https://fontawesome.com).
 
 ## Preview
 
