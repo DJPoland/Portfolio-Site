@@ -6,7 +6,7 @@ import '../assets/css/hover.css'
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-            <span className="icon fa-diamond"></span>
+            <span className="icon fa-linux"></span>
         </div>
         <div className="content">
             <div className="inner">
