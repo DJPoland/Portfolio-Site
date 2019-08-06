@@ -25,7 +25,7 @@
 		> * {
 			@include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
 			position: relative;
-			margin-top: 3.5rem;
+			margin-top: 3.6rem;
 
 			&:before {
 				content: '';
@@ -120,7 +120,7 @@
 						border-left: 0;
 					}
 
-					a {
+					span {
 						display: block;
 						min-width: 7.5rem;
 						height: 2.75rem;
@@ -130,6 +130,7 @@
 						letter-spacing: _font(letter-spacing);
 						font-size: 0.8rem;
 						border-bottom: 0;
+						cursor: pointer;
 
 						&:hover {
 							background-color: _palette(border-bg);

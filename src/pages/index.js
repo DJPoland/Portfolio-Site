@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+// TODO: Speedup initalize componentDidMount execution. There's a weird form of lag going on...
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
@@ -84,16 +85,14 @@ class IndexPage extends React.Component {
       }
     }
   }
-
+// Renders the Header, Main, and Footer components from ../components/. This is how Gatsby is structured.
   render() {
-    console.log(this.props)
     return (
       <Layout location={this.props.location}>
         <div
           className={`body ${this.state.loading} ${
             this.state.isArticleVisible ? 'is-article-visible' : ''
           }`}
-          // className={`body`}
         >
           <div id="wrapper">
             <Header

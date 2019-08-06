@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 
 import workPhoto from '../images/workPhoto.jpg'
 
+
+// TODO: Refactor the article elements into Article.js component.
 class Main extends React.Component {
   render() {
     let close = (
