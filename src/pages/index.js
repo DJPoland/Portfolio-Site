@@ -86,6 +86,7 @@ class IndexPage extends React.Component {
     }
   }
 // Renders the Header, Main, and Footer components from ../components/. This is how Gatsby is structured.
+// TODO: Im not a fan of how the location prop is implemented from the gatsby template. I should do something about that.... 
   render() {
     return (
       <Layout location={this.props.location}>

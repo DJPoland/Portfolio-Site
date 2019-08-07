@@ -1,52 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Article from './Article'
 import workPhoto from '../images/workPhoto.jpg'
-
 
 // TODO: Refactor the article elements into Article.js component.
 class Main extends React.Component {
   render() {
-    let close = (
-      <div
-        className="close"
-        onClick={() => {
-          this.props.onCloseArticle()
-        }}
-      ></div>
-    )
-
     return (
       <div
         ref={this.props.setWrapperRef}
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
-        <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
+        <Article
+          name="work"
+          article={this.props.article}
+          articleTimeout={this.props.articleTimeout}
+          onCloseArticle={this.props.onCloseArticle}
         >
-          <h2 className="major">Work</h2>
           <p>
             This page is currently under development. It should be ready in the
             next few days. For more info, check out the source code of this
-            website by clicking
-            <a href="https://github.com/DJPoland/Portfolio-Site">here</a>.
+            website by clicking.{' '}
           </p>
-          {close}
-        </article>
-
-        <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
+        </Article>
+        <Article
+          name="about"
+          article={this.props.article}
+          articleTimeout={this.props.articleTimeout}
+          onCloseArticle={this.props.onCloseArticle}
         >
-          <h2 className="major">About</h2>
           <span className="image main">
             <img src={workPhoto} alt="" />
           </span>
@@ -67,61 +51,15 @@ class Main extends React.Component {
             virtual and augmented reality. Now I hope to develop video games of
             any form or develop software that's utilized by many users.
           </p>
-          {close}
-        </article>
-
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
+        </Article>
+        <Article
+          name="contact"
+          article={this.props.article}
+          articleTimeout={this.props.articleTimeout}
+          onCloseArticle={this.props.onCloseArticle}
         >
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
-          <ul className="icons">
-            <li>
-              <a
-                href="https://twitter.com/djpoland21"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/DJPoland" className="icon fa-github">
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/donald-poland/"
-                className="icon fa-linkedin"
-              >
-                <span className="label">Linkedin</span>
-              </a>
-            </li>
-          </ul>
-          {close}
-        </article>
+        </Article>
+
       </div>
     )
   }
