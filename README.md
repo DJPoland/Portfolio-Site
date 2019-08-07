@@ -4,7 +4,7 @@ This site is using Gatsby, Node, React, and React Bootstrap. Icons by [Font Awes
 
 ## Preview
 
-The site is currently live at [djpoland.github.io](https://djpoland.github.io/).
+The site is currently live at [https://djpoland.com](https://djpoland.com).
 ## Installation/Modify the Site with Node.js
 
 1. First install [Node.js](https://nodejs.org/en/).
