@@ -1,8 +1,9 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "Donald-Poland-Portfolio",
+  "description": "Donald Poland's Portfolio",
+  "private": true,
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Donald Poland",
   "dependencies": {
     "gatsby": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
@@ -21,14 +22,9 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write '**/*.js'"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
